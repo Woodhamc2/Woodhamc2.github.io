@@ -14,7 +14,7 @@ dog.pivot.set(.5,.5);
 console.log(dog.getLocalBounds());
 
 PIXI.loader 
-    .add('../_assets/dog.json')
+    .add('../assets/dog.json')
     .load(onAssetsLoaded);
 
 var sprite,
