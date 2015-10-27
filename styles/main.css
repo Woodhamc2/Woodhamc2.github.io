@@ -14,8 +14,11 @@
 .full {
     float: left;
     display: inline;
+    position: absolute;
     height: 100%;
     width: 100%;
+    top: 0px;
+    left: 0px;
 }
 
 #canvas {
@@ -29,4 +32,5 @@
     position: absolute;
     width: 100%;
     text-align: center;
+    z-index: 10;
 }
