@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'michromaregular';
+    src: url('fonts/michroma-webfont.eot');
+    src: url('fonts/michroma-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/michroma-webfont.woff2') format('woff2'),
+         url('fonts/michroma-webfont.woff') format('woff'),
+         url('fonts/michroma-webfont.ttf') format('truetype'),
+         url('fonts/michroma-webfont.svg#michromaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'open_sansregular', Arial, Verdana;
+}
+ul {
+    list-style: none;
+}
+p, h5, h6, {
+    font-family: 'open_sansregular', Arial, Verdana;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'michromaregular', Arial, Verdana;
+}
+h2 {
+    font-size: 1.8em;
+}
+
+.clear { clear: both; }
+
+.navbar li{
+    text-align: center;
+}    
+.navbar {
+    padding-top: 15px;
+}
+.navbar img {
+    width: 100%;
+}
+.leadnav {
+    
+}
+footer {
+    background: #333;
+    height: 14em;
+    font-size: 12px;
+    font-family: 'michromaregular', Arial, Verdana;
+    padding: 30px;
+}
+footer i {
+    color: #fff;
+    padding-top: 10px;
+}
+   
+img {
+    width: 100%;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: #207866;
+}
+
+.logo {
+    width: auto;   
+}
+.navbar-inverse .navbar-toggle {
+    margin-top: 5px;
+}
+.cart {
+    padding:  0 25px 25px 25px;
+    font-size: 50px;
+}
+.hero {
+    margin-top: -20px;
+}
+.herocover {
+    background: #207866;
+    color: #fff;
+    text-align: center;
+    height: 12em;
+    position: absolute;
+    margin-top: -190px;
+    width: 100%;
+    opacity: 0.85;
+}
+.herocover h1, h2, p {
+    opacity: 1.0;
+    padding: 2px;
+}
+.herocover h1 {
+    font-size: 28px;
+}
+.herocover h2 {
+    font-size: 10px;
+    margin-top: -5px;
+}
+.herocover i {
+    font-size: 2em;
+}
+.herocover a:hover {
+    color: #12453B;
+}
+.category {
+    background: #FFFFF0;
+}
+.category a:hover {
+    color: #12453B;
+}
+.categorycall {
+    background: #207866;
+    text-align: center;
+    font-size: 20px;
+    height: 32px;
+    margin-top: -30%;
+    position: relative;
+}
+.categorycall a:hover {
+    color: #12453B;
+}
+.categorypic {
+    border-style: solid;
+    border-color: #207866;
+    border-width: 3px;
+    padding: 10px;
+}
+.navbar-header a:hover {
+    color: #12453B;
+}
+.navbar-toggle {
+    margin: 25px;
+    padding: 15px;
+}
+.newsletter {
+    background: #207866;
+    padding: 5px 10px 25px 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.newsletter h3 {
+    color: #fff;
+}
+
+.newsletter input {
+    border-radius: 3px;
+    border-style: none;
+    font: 12px 'michromaregular', Arial, Verdana;
+    padding: 5px 0 10px 15px;
+    margin-top: 10px;
+}
+.subnav h4 {
+    color: #333;
+}
+.subnav {
+    border-style: solid;
+    border-color: #207866;
+    border-width: 3px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+}
+.subnav a {
+    color: #333;
+}
+.subnav a:hover {
+    color: #12453B;
+    border-color: #333;
+}
+.productlist {
+    border-style: solid;
+    border-color: #207866;
+    border-width: 3px 0 0 0;
+    padding: 10px;
+}
+.productlist img {
+    padding-top: 30%;
+}
+.productlist h4 {
+    
+}
+
+.productlist .shipping {
+    color: #e5922f;
+}
+
+.saleprice {
+    color: #BFC4BE;
+    text-decoration: line-through;
+}
+.productshead {
+    color: #fff;
+    background: #207866;
+    padding: 5px 20px 15px;
+    width: 85%
+}
+.productsheadalt {
+    color: #333;
+    background: #fff;
+    padding: 5px 20px 15px;
+    width: 85%
+}
+.detailedhead {
+    font-size: 2.2em;
+}
+.shop {
+    font-family: 'michromaregular', Arial, Verdana;
+    background: #207866;
+    color: #fff;
+	display:inline-block;
+    border: none;
+    color:#ffffff;
+	font-size:15px;
+	padding:10px 55px 15px 25px;
+	text-decoration:none;
+    float: right;
+}
+
+.coupon {
+    background: #e5922f;
+    font: 12px 'open_sansregular', Arial, Verdana;
+    color: #fff;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 2%
+    
+}
+.headproductslide {
+    margin-top: 5%
+}
+.starred {
+    text-align: center;
+    font-size: 22px;
+}
+.productinfo {
+    background: #207866;
+    color: #fff;
+    font: 16px 'open_sansregular', Arial, Verdana;
+    padding: 15px;
+       margin-top: 8%;
+    margin-bottom: 8%
+}
+
+.productform {
+    padding: 15px;
+    background: #333;
+    height: 24em;
+ 
+}
+.regprice {
+    color: #333;
+}
+.ad {
+    text-align: center;
+    color: #e5922f;
+}
+
+.productform input {
+    margin-top: 15px;
+    width: 10%;
+    text-align: center;
+}
+.productform li, h4 {
+    color: #fff;
+}
+.productform select {
+    width: 90%;
+}
+.thumbrow  {
+    margin: 25px auto 20px auto;
+}
+.addtocart {
+    color: #fff;
+    font-family: 'michromaregular', Arial, Verdana;
+    background: #e5922f;
+	display:inline-block;
+    border: none;
+	font-size:15px;
+	padding:10px 55px 15px 25px;
+	text-decoration:none;
+    margin-top: 10%;
+    
+}
+.thumbs:hover {
+    cursor: pointer;
+}
+.article {
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+.article button {
+    margin-bottom: 15px;
+    color: #207866;
+    font-family: 'michromaregular', Arial, Verdana;
+    background: #fff;
+	display:inline-block;
+    border-style: solid;
+    border-color: #207866;
+	font-size:15px;
+	padding:10px 55px 15px 25px;
+	text-decoration:none;
+    margin-top: 10%;
+}
+
+.cart-object {
+    background: #f2f2f2;
+        font-family: 'michromaregular', Arial, Verdana;
+
+    box-shadow: 2px 2px 2px 2px #888888;
+    padding: 2%;
+    margin: 2%;
+}
+.checkout {
+    margin-bottom: 4%;
+    color: #207866;
+    font-family: 'michromaregular', Arial, Verdana;
+    background: #fff;
+	display:inline-block;
+    border-style: solid;
+    border-color: #207866;
+	font-size:15px;
+	padding:10px 55px 15px 25px;
+	text-decoration:none;
+    margin-top: 2%;
+}
+
+.removeButton {
+    color: #4d0000;
+    font-family: 'michromaregular', Arial, Verdana;
+    background: #fff;
+	display:inline-block;
+    border-style: solid;
+    border-color: #4d0000;
+	font-size:9px;
+	padding:10px;
+	text-decoration:none;
+    margin-top: 10%;
+}
+
+.cardinfo {
+    font: 16px 'open_sansregular', Arial, Verdana;
+    margin-top: 5%;
+    color: #fff;
+}
+.cardinfo button {
+    border-color: #e5922f;
+    color: #e5922f;
+    background-color: #333;
+}
+.scorecardbody {
+    background: #111;
+}
