@@ -5,24 +5,79 @@
 		<meta name="format-detection" content="telephone=no">
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
 		<title>WeatherApp Test</title>
+        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap-theme.min.css" />
 		<link rel="stylesheet" href="assets/css/app.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
 	</head>
 	<body>
-		<div class="app container">
-
+		<div class="app container nopad">
+            <div class="col-xs-12 currentvineyard">
+                <h2 class="col-xs-12" id="vineyardName">Madrone</h2>
+            </div>
+           <!-- <img src="assets/images/vineyard3.jpg" class="mainbackground col-md-12 nopad"> -->
 			<article id="page-one" class="page">
-                <div id="today"></div>
-                <div id="tom"></div>
-                <div id="third"></div>
-                <div id="fourth"></div>
+                <div class="container">
+                    <div class="row">
+                        <div id="clock" class="col-xs-12"></div>
+                        <span id="time" class="col-xs-6 pull-left"></span>
+                    </div>
+                    <div class="row">
+                        <span id="today" class="col-xs-12"></span>
+                    </div>
+                    <div class="row nextdays">
+                        
+                        <div id="tom" class="col-xs-4"></div>
+                        <div id="third" class="col-xs-4"></div>
+                        <div id="fourth" class="col-xs-4"></div>
+                    </div>
+                </div>
+            <div class=" footer">
+                <div class="col-xs-6 noleft">
+                    <div class="col-xs-12 altvy vineyardSelect" id="madrone">
+                        <h4><span>Madrone</span><span class="glyphicon glyphicon-map-marker pull-right"></span></h4>
+                    </div>
+                    <div class="col-xs-12 altvy vineyardSelect" id="arrowood">
+                        <h4><span>Arrowood</span><span class="glyphicon glyphicon-map-marker pull-right"></span></h4>
+                    </div>
+                    <br>
+                    <div class="col-xs-12 altvy vineyardSelect" id="buenavista">
+                        <h4><span class="place">Buena Vista</span><span class="glyphicon glyphicon-map-marker pull-right"></span></h4> 
+                    </div>
+                    <br>
+                    <div class="col-xs-12 altvy vineyardSelect" id="larochelle">
+                        <h4><span>La Rochelle</span><span class="glyphicon glyphicon-map-marker pull-right"></span></h4>
+                        
+                    </div>
+                </div>
+                <div class="col-xs-6 noright">
+                    <div class="col-xs-12 extras" >
+                        <h4><span class="glyphicon glyphicon-search pull-left"></span><span>Wine</span></h4>
+                    </div>
+                    <div class="col-xs-12 extras">
+                        <h4><span class="glyphicon glyphicon-search pull-left"></span><span>Directions</span></h4>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
             </article>
-			<article id="page-two" class="page right">
-                <div id="hourly">
-                    <div id="two"></div>
-                    <div id="four"></div>
-                    <div id="six"></div>
+            
+			<article id="page-two" class="page right container">
+                <div id="hourly col-xs-6">
+                    <div class="row">
+                        <h2 class="col-xs-8">In 2 Hours</h2>
+                        <div id="two" class="col-xs-8 col-xs-offset-1"></div>
+                    </div>
+                    <div class="row">
+                         <h2 class="col-xs-8">In 4 Hours</h2>
+                        <div id="four" class="col-xs-8 col-xs-offset-1"></div>
+                    </div>
+                    <div class="row">
+                         <h2 class="col-xs-8">In 6 Hours</h2>
+                        <div id="six" class="col-xs-8 col-xs-offset-1"></div>
+                    </div>
                 </div>
             </article>
 
