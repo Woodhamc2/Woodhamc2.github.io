@@ -1,0 +1,165 @@
+html {
+   
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, i {
+    color: #fff;
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 16px;
+    
+}
+small {
+    color: #fff !important;
+}
+.nopad {
+    padding: 0px !important;
+}
+.mainIconContainer{
+    text-align: right;
+}
+.mainIcon{
+    line-height: 200px !important;
+    position: relative;
+}
+
+#page-one {
+    background: url('../images/vineyard1.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#page-two {
+    background: #3573FF;
+}
+
+#page-three {
+    background: #007F02;
+}
+
+#clock h1 {
+    font-size: 46px;
+    margin-bottom: 0px;
+}
+#time h3 {
+    margin-top: 0px;
+}
+#today {
+    color: #fff;
+    padding-left: 15px;
+    margin-top: -30px;
+}
+#today i, h2 {
+    font-size: 68px;
+}
+#nextdays i, h2 {
+    font-size: 32px;
+}
+.backgroundmain {
+    padding: 0px;
+}
+.big-temp {
+    font-size: 140px !important;
+}
+
+.lrmargin {
+    margin: 25px 15px auto 15px;
+}
+.currentvineyard {
+    background: #333333;
+    height: 50px;
+}
+
+.currentvineyard h3 {
+    padding-top: 8px;    
+}
+.currentvineyard h2 {
+    font-size: 26px;
+}
+
+#hourly i {
+    padding-top: 20px;
+    
+}
+#page-two{
+    padding-left: 15px;
+    
+}
+.nextdays {
+    background-color: rgba(53,115,255,1);
+    padding-bottom: 10px;
+    text-align: center;
+}
+.threeDays {
+    margin-top: 0px;
+}
+.extras {
+    color: #fff;
+    background-color: #333333;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    
+}
+.altvy {
+    color: #fff;
+    background-color: #333333;
+    font-size: 18px;
+    height: 50px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    width: 175px;
+    margin: 0px auto 10px auto;
+}
+.altvy h4 {
+    margin-top: 5px;
+}
+.noleft {
+    padding-left: 0;
+}
+.noright{
+    padding-right: 0;
+}
+.footer {
+    height: auto;
+    width: 375px;
+    margin-top: 10px;
+    padding-left: 0px;
+    
+}
+/* Page Swiping */
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.page.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.page.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
