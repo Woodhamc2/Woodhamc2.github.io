@@ -1,93 +1,404 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
-		<title>WeatherApp Test</title>
-        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap-theme.min.css" />
-		<link rel="stylesheet" href="assets/css/app.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
-	</head>
-	<body>
-		<div class="app container nopad">
-            <div class="col-xs-12 currentvineyard">
-                <h2 class="col-xs-12" id="vineyardName">Madrone</h2>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATR</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" /> 
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  
+  
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <video class="index-video" autoplay loop>
+              <source src="media/4.webm" type="video/webm">
+              <source src="media/5.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-info">
+        <div class="col-xs-12 video-container">
+            <div class="video">
+                <div class="top"><a href="index.html"><img class="logo wow fadeInLeft" src="img/logo.png"></a></div>
+                <div><a class="login wow fadeInRight" href="#">Login<img  src="img/logout.png"></a></div>
+                <div class="content text-center">
+                  <h1 class="content-heading wow fadeInDown">MAKE A STAFFING CONNECTION</h1>
+                  <p class="content-desc col-lg-12  wow fadeInDown">For Technical People, by Technical People</p>
+                  <a href="#search" class="content-btn page-scroll wow fadeInDown">Search Job</a><a href="#search" class="content-btn page-scroll wow fadeInDown">Search Profiles</a><br>
+                  <a href="#resume" class="resume-btn page-scroll wow fadeInUp">Submit Your Resume</a>
+                </div><!-- /content -->
             </div>
-           <!-- <img src="assets/images/vineyard3.jpg" class="mainbackground col-md-12 nopad"> -->
-			<article id="page-one" class="page">
-                <div class="container">
-                    <div class="row">
-                        <div id="clock" class="col-xs-12"></div>
-                        <span id="time" class="col-xs-6 pull-left"></span>
-                    </div>
-                    <div class="row">
-                        <span id="today" class="col-xs-12"></span>
-                    </div>
-                    <div class="row nextdays">
-                        
-                        <div id="tom" class="col-xs-4"></div>
-                        <div id="third" class="col-xs-4"></div>
-                        <div id="fourth" class="col-xs-4"></div>
-                    </div>
+        </div>
+        </div>
+        <br>
+    </header>
+    <div class="clearfix navbar-container index-nav">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                    </button>
                 </div>
-            <div class=" footer">
-                <div class="col-xs-6 noleft">
-                    <div class="col-xs-12 altvy vineyardSelect" id="madrone">
-                        <h4><span>Madrone</span><span class="glyphicon glyphicon-map-marker pull-right"></span></h4>
-                    </div>
-                    <div class="col-xs-12 altvy vineyardSelect" id="arrowood">
-                        <h4><span>Arrowood</span><span class="glyphicon glyphicon-map-marker pull-right"></span></h4>
-                    </div>
-                    <br>
-                    <div class="col-xs-12 altvy vineyardSelect" id="buenavista">
-                        <h4><span class="place">Buena Vista</span><span class="glyphicon glyphicon-map-marker pull-right"></span></h4> 
-                    </div>
-                    <br>
-                    <div class="col-xs-12 altvy vineyardSelect" id="larochelle">
-                        <h4><span>La Rochelle</span><span class="glyphicon glyphicon-map-marker pull-right"></span></h4>
-                        
-                    </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">JOB SEEKER</a></li>
+                        <li><a href="knowledge-center.html">KNOWLEDGE CENTER</a></li>
+                        <li><a href="about-us.html">ABOUT US</a></li>
+                        <li><a href="partner.html">PARTNER</a></li>
+                        <li><a href="employer.html">EMPLOYER</a></li>
+                    </ul>
                 </div>
-                <div class="col-xs-6 noright">
-                    <div class="col-xs-12 extras" >
-                        <h4><span class="glyphicon glyphicon-search pull-left"></span><span>Wine</span></h4>
-                    </div>
-                    <div class="col-xs-12 extras">
-                        <h4><span class="glyphicon glyphicon-search pull-left"></span><span>Directions</span></h4>
-                    </div>
-                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="navfix">
+    <section id="search">
+            <div class="container">
                 <div class="row">
+                    <div class="text-center">
+                        <h3 class="title-text wow fadeInDown">ALLIED TECHNICAL RESOURCES, INC.</h3>
+                        <p class="desc-text col-lg-8 col-lg-push-2 wow fadeInUp">We deliver solutions for your professional resource needs, I&C and Electrical craft, and payroll challenges. We also offer consulting services for help with your unique challenges.</p>
+                    </div>
                 </div>
             </div>
-            </article>
-            
-			<article id="page-two" class="page right container">
-                <div id="hourly col-xs-6">
-                    <div class="row">
-                        <h2 class="col-xs-8">In 2 Hours</h2>
-                        <div id="two" class="col-xs-8 col-xs-offset-1"></div>
+            <div class="row">
+                    <div class="search-bg">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="search-icons  wow fadeInDown">
+                                    <img src="img/icon-1.png">
+                                    <img src="img/icon-2.png">
+                                    <img src="img/icon-3.png">
+                                    <img src="img/icon-4.png">
+                                    <img src="img/icon-5.png">
+                                    <img src="img/icon-6.png">
+                                </div>
+                                <div class="slogan col-lg-12  wow fadeInDown">
+                                    <h2>The best staffing agency for technical people.</h2>
+                                </div>
+                                <div class="col-lg-12 wow fadeInDown">
+                                    <form class="form-inline">
+                                      <div class="form-group">
+                                        <label class="sr-only" for="keyword">Keyword</label>
+                                        <input type="text" class="form-control" id="keyword" placeholder="Keyword" size="80px">
+                                      </div>
+                                      <button type="submit" class="btn btn-warning">SEARCH JOBS</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                         <h2 class="col-xs-8">In 4 Hours</h2>
-                        <div id="four" class="col-xs-8 col-xs-offset-1"></div>
-                    </div>
-                    <div class="row">
-                         <h2 class="col-xs-8">In 6 Hours</h2>
-                        <div id="six" class="col-xs-8 col-xs-offset-1"></div>
+            </div>
+            <div class="container">
+               <div class="row">
+                    <div class="text-center wow fadeInUp">
+                        <h3 class="title-text"></h3>
+                        <p class="desc-text col-lg-8 col-lg-push-2">Since 1988, Allied Technical Resources, Inc.’s reputation has been built on supplying qualified professional and technical resources across various job categories. We have grown steadily and now provide a broad range of resources to industry and business throughout the Southeast and across the nation.</p>
                     </div>
                 </div>
-            </article>
-
-		</div>
-		<script src="cordova.js"></script>
-		<script src="assets/components/jquery/dist/jquery.min.js"></script>
-		<script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="assets/components/hammerjs/hammer.min.js"></script>
-		<script src="assets/components/jquery-hammerjs/jquery.hammer.js"></script>
-
-		<script src="assets/js/index.js"></script>
-	</body>
+                <div class="text-center wow fadeInUp">
+                    <button id="job-btn" type="submit" class="btn btn-default btn-sm">JOB LISTING</button>
+                </div>
+                <div class="job-list">
+                    <p class="desc-text col-lg-8 col-lg-push-2">Since 1988, Allied Technical Resources.Allied Technical Resources.</p>
+                    <p class="desc-text col-lg-8 col-lg-push-2">Since 1988, Allied Technical Resources.</p>
+                    <p class="desc-text col-lg-8 col-lg-push-2">Since 1988, Allied Technical Resources.</p>
+                    <p class="desc-text col-lg-8 col-lg-push-2">Since 1988, Allied Technical Resources.</p>
+                    <p class="desc-text col-lg-8 col-lg-push-2">Since 1988, Allied Technical Resources.</p>
+                    <p class="desc-text col-lg-8 col-lg-push-2">Since 1988, Allied Technical Resources.</p>
+                </div>
+            </div>
+    </section>
+    </div>
+    <section id="alert">
+        <div class="section-top">
+            <div class="row">
+                <div class="text-center">
+                    <h3 class="title-text wow fadeInDown">Job Alert</h3>
+                    <p class="sub-text col-lg-8 col-lg-push-2 wow fadeInUp">Sign up for latest job updates.</p>
+                </div>
+            </div>
+        </div>
+        <div class="alert-content">
+            <div class="container">
+                <div class="row alert-form">
+                    <h3 class="wow fadeInLeft">Create A Job Alert</h3>
+                    <form>
+                        <div class="form-group col-lg-3">
+                        </div>
+                      <div class="form-group col-lg-12 wow fadeInDown" data-wow-delay="100ms">
+                        <input type="text" class="form-control" placeholder="First Name">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInDown" data-wow-delay="200ms">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInDown" data-wow-delay="300ms">
+                            <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInDown" data-wow-delay="300ms">
+                            <select class="form-control" placeholder="Email">
+                                <option>Skills</option>
+                                <option>Electrical</option>
+                                <option>Electrical</option>
+                                <option>Electrical</option>
+                                <option>Electrical</option>
+                            </select>
+                      </div>
+                      <div class="form-group col-lg-4 wow fadeInLeft">
+                            <button type="submit" class="btn btn-info">GET EMAIL ALERT</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="provide">
+        <div class="container">
+            <div class="row text-center wow fadeInDown">
+                <h3>WE PROVIDE</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-4 wow fadeInDown">
+                    <img src="img/provide-1.png">
+                    <p>Manufacturing<br>Support</p>
+                    <p class="readmore1">READ MORE</p>
+                </div>
+                <div class="col-xs-4 wow fadeInDown">
+                    <img src="img/provide-2.png">
+                    <p>Construction<br>Support</p>
+                    <p class="readmore2">READ MORE</p>
+                </div>
+                <div class="col-xs-4 wow fadeInDown">
+                    <img src="img/provide-3.png">
+                    <p>Nuclear Power<br>Generation Support</p>
+                    <p class="readmore3">READ MORE</p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="readmore-content1">Allied Technical Resources, Inc. leadership team has a lot of knowledge from working in the industry. We are proud to use this experience to help our customers with special projects. Some of our recent projects have been: <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        • Consulting with a major publicly traded corporation on potential sale and divestiture of one of its divisions.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        • Aggregating customer sales data and establishing key performance indicators as well as metrics for determining the sales teams success for a major publicly traded corporation.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        • Several engagements with a large consulting group to help companies evaluate potential acquisition targets in the Power industry.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        • Evaluation of a nuclear customer’s modification process.<br><br><span class="readless1">READ LESS</span></p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="readmore-content2">ATR understands that on large construction projects the client often can’t afford to staff the entire project with permanent people for the entire duration of the project. This is exactly where ATR provides an excellent solution by being able to provide professional resources such as: 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Engineers
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Planners
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Schedulers
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Designers
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Draftsmen
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Project engineers
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Project managers
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	And various other professional resources.<br><br><span class="readless2">READ LESS</span></p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="readmore-content3">At ATR we provide every type of professional resource needed for both ongoing operational needs as well as special projects. Right now, we have hundreds of professionals employed at various nuclear sites performing duties such as: 
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Project management
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Engineering (all disciplines)
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Procedure writers
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Draftsmen
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Schedulers
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	Planners
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;•	And many other functions.
+                        <br><br><span class="readless3">READ LESS</span></p>
+                </div>
+                <div class="col-xs-6 wow fadeInUp">
+                    <img src="img/provide-4.png">
+                    <p>Fossil and Hydro<br>Generation Support</p>
+                    <p class="readmore4">READ MORE</p>
+                </div>
+                <div class="col-xs-6 wow fadeInUp">
+                    <img src="img/provide-5.png">
+                    <p>Consulting<br>Services</p>
+                    <p class="readmore5">READ MORE</p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="readmore-content4">ATR has a long history supporting the energy sector in the nuclear and non-nuclear sector.<br>
+                        We have personnel supporting projects for coal, natural gas, and hydro facilities across the United States.<br>
+                        Additionally, we also have a concentrated support for Turbine services and personnel needed for various turbine manufacturers.
+                        <br><br><span class="readless4">READ LESS</span></p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="readmore-content5">Allied Technical Resources, Inc. leadership team has a lot of knowledge from working in the industry. We are proud to use this experience to help our customers with special projects. Some of our recent projects have been: <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        • Consulting with a major publicly traded corporation on potential sale and divestiture of one of its divisions.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        • Aggregating customer sales data and establishing key performance indicators as well as metrics for determining the sales teams success for a major publicly traded corporation.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        • Several engagements with a large consulting group to help companies evaluate potential acquisition targets in the Power industry.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        • Evaluation of a nuclear customer’s modification process.<br><br><span class="readless5">READ LESS</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <h1 class="title-text wow fadeInDown">WE DELIVER</h1>
+                    <p class="desc-text wow fadeInDown">HIGH QUALITY SERVICE AND<br>EXPERIENCE</p>
+                    <a href="#resume"><button type="submit" class="btn btn-warning wow fadeInUp">SUBMIT YOUR RESUME </button></a>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div class="container wow fadeInDown">
+            <div class="row">
+                <div class="text-center">
+                    <h4>See what people are saying about Allied Technical Resources</h4>
+                    <h1>TESTIMONIALS</h1>
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li><img src="img/testi-1.png">
+                            <p>“I’ve enjoyed working with Stanley Sutphin and Jimmy Morgan, they understand the business and the industry. Also, their networking capabilities. They learn and understand their customer.”</p></li>
+                            <li><img src="img/testi-1.png">
+                            <p>“I’ve enjoyed working with Stanley Sutphin and Jimmy Morgan, they understand the business and the industry. Also, their networking capabilities. They learn and understand their customer.”</p></li>
+                            <li><img src="img/testi-1.png">
+                            <p>“I’ve enjoyed working with Stanley Sutphin and Jimmy Morgan, they understand the business and the industry. Also, their networking capabilities. They learn and understand their customer.”</p></li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <section id="quote-bg">
+        <div class="container">
+            <div class="row">
+               <div class="text-center col-lg-12 wow fadeInUp">
+                    <h2>"The Best Time to Start <br>A Connection is Now."</h2>
+               </div> 
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="container">
+            <div class="row">
+               <div class="text-center wow fadeInDown">
+                   <h4>Let Allied Technical Resources, Inc., help you</h4>
+                   <h1>SUBMIT RESUME</h1>
+               </div>
+               <form>
+                      <p><span class="red">*</span> Indicates required field</p>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                        <input type="text" class="form-control" placeholder="First Name">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                            <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                        <input type="number" class="form-control" placeholder="Phone Number">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                        <input type="text" class="form-control" placeholder="City">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                        <input type="text" class="form-control" placeholder="Province/State">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                            <input type="text" class="form-control" placeholder="Country">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                        <input type="password" class="form-control" placeholder="Password">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                        <input type="password" class="form-control" placeholder="Confirm Password">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                            <input type="text" class="form-control" placeholder="Industry Type">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                        <input type="text" class="form-control" placeholder="Employment Type">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                        <h4>ATTACH YOUR RESUME</h4>
+                        <input type="file" id="exampleInputFile">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInUp">
+                        <p>Enter the code as it is shown in the box</p>
+                        <input type="number" class="form-control" placeholder="">
+                      </div>
+                      <div class="form-group col-lg-12 wow fadeInRight">
+                            <button type="submit" class="btn btn-info pull-right">SUBMIT</button>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content wow fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h4 class="col-xs-12">OUR CORPORATE <br>HEADQUATERS</h4>
+                        <p class="col-xs-12"><i class="fa fa-building"></i>&nbsp;&nbsp;&nbsp;7421 Carmel Executive Park Drive 
+                        <br>Suite 240 
+                        <br>Charlotte, NC 28226</p><br>
+                        <p class="col-xs-12"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;704-544-900</p>
+                        <p class="col-xs-12"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;8 A.M. to 5 P.M.</p>
+                        <p class="col-xs-12"><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;Monday through Friday</p>
+                    </div>
+                    <div class="col-sm-5">
+                        <h4 class="col-xs-12">FOLLOW US</h4>
+                        <p class="col-xs-12"><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></p><br>
+                        <h4 class="col-xs-12">AFFILIATED COMPANY</h4>
+                        <img class="col-xs-3" src="img/asr_logo.png"><p class="col-xs-8"><i class="fa fa-building"></i>&nbsp;&nbsp;&nbsp;7421 Carmel Executive Park Drive 
+                        <br>Suite 212</p>
+                        <p class="col-xs-12"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;704-910-134</p>
+                        <p class="col-xs-12"><a href="http://www.alliedspecialtyresources.com"><i class="fa fa-link"></i>&nbsp;&nbsp;&nbsp;alliedspecialtyresources.com</a></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4 class="col-xs-12">LINKS</h4>
+                        <p class="col-xs-12"><a href="#resume">Submit Resume</a>
+                        <p class="col-xs-12"><a href="#">Job Listings</a></p>
+                        <p class="col-xs-12"><a href="#">Search Jobs</a></p>
+                        <p class="col-xs-12"><a href="#">Search Profiles</a></p>
+                        <p class="col-xs-12"><a href="#">FAQs</a>
+                        <p class="col-xs-12"><a href="#">Sign Up For Job Alerts</a></p>
+                        <p class="col-xs-12"><a href="#">Admin Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="map">   
+    </div>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3ptGLjptFs44rRcwdJcwWQs3T1mCuqVg&callback=initMap">
+</script>    
+<script src="js/jquery.js"></script>
+<script src=js/page-scroll.js></script>
+<script src="js/wow.min.js"></script>
+<script src="js/readmore.min.js"></script>
+<script src="js/map.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/index.js"></script>
+<script src="js/lightslider.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+(function() {
+  var video = document.getElementById("my-video");
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
+</body>
 </html>
